@@ -22,7 +22,7 @@ function Menu({
           item={item}
           index={index}
           isHighlighted={highlightedIndex === index}
-          isSelected={selectedItem === index}
+          isSelected={selectedItem?.id === item.id}
         >
           {item.name}
         </ListItem>
